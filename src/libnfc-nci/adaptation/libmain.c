@@ -48,6 +48,8 @@
 #include "nfc_hal_nv_co.h"
 #include "nfa_nv_ci.h"
 #include "CrcChecksum.h"
+#include <unistd.h>
+
 extern char nfc_nci_store[];
 static const char* sNfaStorageBin = "/nfaStorage.bin";
 

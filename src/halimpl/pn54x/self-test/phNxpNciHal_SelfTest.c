@@ -16,11 +16,13 @@
 
 #ifdef NXP_HW_SELF_TEST
 
+#define _GNU_SOURCE
 #include <phNxpNciHal_SelfTest.h>
 #include <phNxpLog.h>
 #include <pthread.h>
 #include <phOsalNfc_Timer.h>
 #include <phNxpConfig.h>
+#include <pthread.h>
 
 /* Timeout value to wait for response from PN54X */
 #define HAL_WRITE_RSP_TIMEOUT (2000)

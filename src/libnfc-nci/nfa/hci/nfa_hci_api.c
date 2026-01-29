@@ -46,6 +46,7 @@
 #include "nfa_hci_api.h"
 #include "nfa_hci_int.h"
 #include "nfa_hci_defs.h"
+#include <unistd.h>
 
 /*******************************************************************************
 **
@@ -1055,7 +1056,7 @@ void NFA_HciW4eSETransaction_Complete(tNFA_HCI_TRANSCV_STATE type)
         {
             if(nfa_hci_cb.hci_state == NFA_HCI_STATE_WAIT_RSP)
             {
-                sleep(1);
+                usleep(1 * 1000);
             }
             else
                 break;

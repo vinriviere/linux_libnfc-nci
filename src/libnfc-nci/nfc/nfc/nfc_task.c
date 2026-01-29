@@ -64,6 +64,8 @@
 #include "nfa_dm_int.h"
 #endif
 
+void nfa_dm_p2p_prio_logic_cleanup(void);
+
 /*******************************************************************************
 **
 ** Function         nfc_start_timer

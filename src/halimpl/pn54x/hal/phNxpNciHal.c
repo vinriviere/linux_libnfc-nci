@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+#define _GNU_SOURCE
 #include <sys/stat.h>
 #include <phNxpNciHal.h>
 #include <phNxpNciHal_ext.h>
@@ -26,6 +27,7 @@
 #include <phNxpConfig.h>
 #include <phNxpNciHal_NfcDepSWPrio.h>
 #include <phNxpNciHal_Kovio.h>
+#include <pthread.h>
 
 const char* product[] = {"UNKNOWN","PN547C3","PN65T","PN548C2","PN66T",
 "PN551","PN67T","PN553","PN80T","PN557","PN81T","INVALID"};

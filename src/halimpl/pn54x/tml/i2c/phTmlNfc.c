@@ -18,12 +18,14 @@
  * TML Implementation.
  */
 
+#define _GNU_SOURCE
 #include <phTmlNfc.h>
 #include <phOsalNfc_Timer.h>
 #include <phNxpLog.h>
 #include <phDal4Nfc_messageQueueLib.h>
 #include <phTmlNfc_i2c.h>
 #include <phNxpNciHal_utils.h>
+#include <pthread.h>
 
 #define CUSTOM_MAX_READ_ERROR_BEFORE_ABORT 100
 static uint8_t s_customReadErrCounter = 0;

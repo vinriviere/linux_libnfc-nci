@@ -55,6 +55,7 @@
 #include "rw_int.h"
 #include "tags_int.h"
 #include "gki.h"
+#include "nfa_rw_int.h"
 
 /* main state */
 #define RW_T4T_STATE_NOT_ACTIVATED              0x00    /* T4T is not activated                 */
