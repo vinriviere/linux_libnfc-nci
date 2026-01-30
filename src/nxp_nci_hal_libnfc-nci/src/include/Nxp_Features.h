@@ -18,6 +18,8 @@
 
 #ifndef NXP_FEATURES_H
 #define NXP_FEATURES_H
+
+#include <cstdint>
 #include <unistd.h>
 #include <string>
 

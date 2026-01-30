@@ -444,6 +444,7 @@ void onDeviceDeparture (void)
     framework_UnlockMutex(g_SnepClientLock);
 }
 
+void PrintNDEFContent(nfc_tag_info_t* TagInfo, ndef_info_t* NDEFinfo, unsigned char* ndefRaw, unsigned int ndefRawLen);
 void onMessageReceived(unsigned char *message, unsigned int length)
 {
     unsigned int i = 0x00;
